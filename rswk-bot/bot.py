@@ -10,7 +10,7 @@ from datetime import datetime
 
 token = os.environ['gm_key']
 client = Client.from_token(token)
-bot_id = 'e4f5c8a0b73db7135d78a1a308'
+bot_id = os.environ['BOT_ID']
 
 app = Flask(__name__)
 @app.route('/', methods=['POST'])
